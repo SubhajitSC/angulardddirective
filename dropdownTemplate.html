@@ -1,0 +1,52 @@
+<select name="selectedModel" ng-model="selectedModel" class="ddclass" ng-change="cutValue(selectedModel)">
+  <option value="">Select</option>
+  <option value="{{option.option}}" ng-repeat="option in listOptions | unique : 'option'">{{option.option}}</option>
+  </select>
+
+<div class="predictedDD">
+    <i class="fa fa-chevron-down" style="float: right;"></i>
+  <div class="naver">
+    <ul class="nn" ng-click="showList()">
+      <li ng-if="psl==true">
+        Select Driver to Pair
+      </li>
+      <li>
+        {{putData}}
+      </li>
+    </ul>
+    <ul class="pp" ng-if="sl==true">
+      <li>
+        <input ng-model="searchText" class="myTextBox" />
+        <i class="fa fa-search oprate"></i>
+      </li>
+
+      <li class="lister" ng-repeat="result in results | filter:searchText" ng-click="showData(result.dname)" ng-mouseover="hoverList(result.dname)" ng-mouseout="hideList(result.dname)" ng-class="{red: hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        {{result.dname}}
+      </li>
+    </ul>
+    <div class="hoverName" ng-if="ssl==true" ng-repeat="r in resultsHov">
+      <div class="dn">
+        <span class="ddname">
+          DRIVER
+        </span>
+        <span class="namer">
+          <img src="{{r.imagename}}" class="himg" />
+        </span>
+        <span class="imger">
+          {{r.dname}}
+        </span>
+      </div>
+      <div class="dn">
+        <span class="ddname">
+          VEHICLE
+        </span>
+        <span class="namer">
+          <img src="{{r.carim}}" class="himg" />
+        </span>
+        <span class="imger">
+          {{r.platname}}
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

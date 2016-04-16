@@ -1,0 +1,307 @@
+@font-face {
+  font-family: 'robotocondensed';
+  src: url('../fonts/roboto-condensed_0-webfont.eot');
+  src: url('../fonts/roboto-condensed_0-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/roboto-condensed_0-webfont.woff') format('woff'),
+  url('../fonts/roboto-condensed_0-webfont.ttf') format('truetype'),
+  url('../fonts/roboto-condensed_0-webfont.svg#robotocondensed') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'robotocondensedlight';
+  /*src: url('../fonts/roboto-condensed_0-webfont.eot');*/
+  src: url('../fonts/RobotoCondensed-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  /*border-bottom: 1px solid #e5e5e5;*/
+  margin-bottom: 10px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
+.ddclass {
+  width: 100%;
+  background: white;
+  height: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding-right: 34px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.ng-valid-parse {
+  background: rgba(100, 149, 237, 0.22) !important;
+}
+
+.predictedDD {
+  background: white;
+  padding: 10px;
+  border: 1px solid #A9A8A8;
+  text-align: left;
+  cursor: pointer
+}
+
+ul.nn {
+  list-style: none;
+  margin: 0 !important;
+  padding-left: 0 !important;
+}
+
+ul.pp {
+  list-style: none;
+  border-top: 1px solid #B9B9B9;
+  padding: 10px;
+  height: 217px;
+  overflow-y: scroll;
+}
+
+.hoverName {
+  background: rgb(33, 81, 109);
+  bottom: 100%;
+  color: #fff;
+  display: block;
+  left: 576px;
+  margin-bottom: 15px;
+  /* opacity: 0; */
+  height: 200px;
+  padding: 8px;
+  pointer-events: none;
+  position: absolute;
+  width: 20%;
+  top: 65px;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  transform: translateY(10px);
+  -webkit-transition: all .25s ease-out;
+  -moz-transition: all .25s ease-out;
+  -ms-transition: all .25s ease-out;
+  -o-transition: all .25s ease-out;
+  transition: all .25s ease-out;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+  -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+  -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+}
+
+.hoverName:before {
+  bottom: -20px;
+  content: " ";
+  display: block;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.hoverName:after {
+  border-left: solid transparent 10px;
+  border-right: solid transparent 10px;
+  border-top: solid rgb(33, 81, 109) 10px;
+  bottom: -10px;
+  content: " ";
+  height: 0;
+  left: 50%;
+  margin-left: -13px;
+  position: absolute;
+  width: 0;
+}
+
+.hoverName {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+
+li.lister {
+  border-bottom: 1px solid #B7B7B7;
+  padding: 10px;
+
+}
+
+.hoverNameText {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.himg {
+  max-width: 60%;
+}
+
+.np {
+  float: right;
+}
+
+span.name {
+  width: 100%;
+  float: left;
+}
+
+.dn {
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.ddname {
+  float: left;
+  width: 100%;
+}
+
+.namer {
+  float: left;
+  width: 50%;
+}
+
+.red {
+  background:rgb(33, 81, 109);
+  color: white;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+
+.myTextBox {
+  width: 100%;
+  border: 0px;
+  padding: 8px;
+  background: rgb(226, 233, 240);
+}
+
+input:focus {
+  border: none !important;
+}
+
+.oprate {
+  position: relative;
+  margin-top: -25px;
+  /* z-index: 9999999999999 !important; */
+  float: right !important;
+  margin-right: 5px;
+}
+
+
+.title {
+  font-size: 30px;
+}
+
+.text {
+  margin-bottom: 20px;
+  font-size: 17px;
+  border-bottom: 1px solid #D4D4D4;
+  padding-bottom: 30px;
+}
+
+.preclass {
+  background: #F8F8F8;
+  margin-top: 10px;
+}
